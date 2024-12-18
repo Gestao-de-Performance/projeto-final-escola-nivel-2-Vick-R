@@ -193,7 +193,7 @@ img {
 .home-img{
     border-right: solid 0.6rem;
     border-bottom: solid 0.6rem;
-    border-image: linear-gradient(125deg, transparent 50%, var(--color-02)) 1;
+    border-image: linear-gradient(130deg, transparent 50%, var(--color-02)) 1;
 }
 
 
