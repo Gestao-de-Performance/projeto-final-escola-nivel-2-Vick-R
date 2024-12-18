@@ -7,6 +7,10 @@
     --bg-color01: #1f242d;
     --bg-color02: #323946;
     --color-00: #323946;
+    --bg-light: #c0b4b4;
+    --header-light:#8d6e6e;
+
+
 
 
     /* cor de teste */
@@ -36,6 +40,10 @@ body{
     color: var(--text-color)
 }
 
+body.light{
+    background-color: var(--bg-light);
+}
+
 header{
     position: fixed;
     top: 0;
@@ -48,6 +56,88 @@ header{
     align-items: center;
     z-index: 100;
    
+}
+
+header.light{
+    background-color: var(--header-light)
+}
+
+.trilho{
+    width: 5.7rem;
+    height: 2.5rem;
+    background-color: var(--bg-color01);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+
+}
+
+.trilho .indicador{
+    width: 50%;
+    height: 100%;
+    background-color: #0c0e11;
+    border-radius: 80px;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho .light .indicador{
+    left: 50%;
+    background-color: var(--bg-light);
+}
+
+.trilho.light{
+    background-color: #cac6c6;
+}
+
+.trilho.light .indicador{
+    left: 50%;
+    background-color: var(--text-color);
+
+}
+
+#sol {
+    position: absolute;
+    right: 9px; 
+    font-size: 30px;
+    padding: auto;
+    transition: all 0.3s ease;
+ } 
+
+#sol, #indicador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sol i, #indicador i{
+    font-size: 1.7rem;
+    color: transparent;
+    transition: color 0.3s ease;;
+}
+
+
+.trilho.light #sol i {
+    
+    color: var(--color-00);
+}
+
+.trilho.light #indicador i {
+    color: transparent;
+}
+
+#indicador i{
+    color: #dbd4d4
+}
+
+.h1.light{
+    color: var(--bg-color01);
 }
 
 .logo{
@@ -126,6 +216,20 @@ span{
     font-size: 2.7rem; /* teste */
 }
 
+/*body.light h1, body.light h3,
+.home.light h1, .home.light h3 {
+    color: var(--bg-color02);
+}*/
+
+
+body.light .home h1, body.light .home h3 {
+    color: var(--bg-color02);
+}
+
+body.light .home p {
+    color: var(--bg-color02)
+}
+
 .home-content p, .sobre-conteudo p{
     margin-top: 1.2rem;
     text-align: justify;
@@ -139,12 +243,13 @@ span{
     text-align: center;
 }
 
-.servicos-container{
+
+.servconta{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.servicos-box{
+.servicosbox{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,7 +258,7 @@ span{
     
 }
 
-.servicos-container .servicos-box{
+.servconta .servicosbox{
     padding: 2rem, 1rem 2.5rem;
     border-radius: 0.6rem;
     text-align: center;
@@ -163,22 +268,35 @@ span{
     /* width: 60%; */
 }
 
-.servicos-container .servicos-box:hover {
+.servicosbox.light {
+    background-color: var(--header-light); 
+    border-color: var(--main-color); 
+}
+
+.servconta.light {
+    background-color: var(--header-light); /* Nova cor de fundo */
+}
+
+body.light .servicosbox p {
+    color: var(--text-color);
+}
+
+.servconta .servicosbox:hover {
     border-color: var(--main-color);
     transform: scale(1.01);
 }
 
-.servicos-box i{
+.servicosbox i{
     font-size: 4.3rem;
     color: var(--main-color);
     margin-top: 2rem;
 }
 
-.servicos-box h3 {
+.servicosbox h3 {
     font-size: 1.5rem;
 }
 
-.servicos-box p {
+.servicosbox p {
     margin: 1.5rem;
     letter-spacing: 0.1rem;
     /* esconder texto grande */
@@ -190,7 +308,7 @@ span{
 
 }
 
-.servicos-box a{
+.servicosbox a{
     /* width: 30%; */
     margin: auto;
         
@@ -209,6 +327,10 @@ span{
        
 }
 
+body.light .btn{
+    color: var(--text-color)
+}
+
 .btn:hover {
     box-shadow: 0 0 0.3rem var(--main-color);
     background-color: inherit;
@@ -219,6 +341,10 @@ span{
 .portifolio {
     background-color: var(--bg-color02);
     
+}
+
+body.light .portifolio {
+    background-color: var(--header-light);
 }
 
 .portifolio-container {
@@ -316,10 +442,16 @@ form .input-box input, form textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
-    color: var(--color-02);
+    color: var(--text-color);
     background-color: var(--bg-color02);
     border-radius: 0.3rem;
     margin: 0.4rem 0;
+}
+
+body.light form .input-box input, 
+body.light form textarea{
+    background-color: var(--text-color);
+    color: var(--bg-color01);
 }
 
 form textarea {
@@ -333,6 +465,10 @@ footer{
     align-items: center;
     padding: 1.2rem;
     background-color: var(--bg-color01);
+}
+
+body.light footer{
+    background-color: var(--header-light);
 }
 
 .media-sociais img{
@@ -436,11 +572,11 @@ footer{
 
     }
 
-    .servicos-container .servicos-box{
+    .servconta .servicosbox{
          width: 60%; 
     }
 
-    .servicos-box a{
+    .servicosbox a{
          width: 30%;
     } 
 
@@ -448,12 +584,12 @@ footer{
 }
 
 @media screen and (max-width: 1440px){
-    .servicos-container .servicos-box{
+    .servconta .servicosbox{
          width: 80%; 
         
     }
 
-    .servicos-box a{
+    .servicosbox a{
         width: 40%;
    }
 
@@ -497,7 +633,7 @@ footer{
         
     }
 
-    .servicos-container .servicos-box{
+    .servconta .servicosbox{
         width: 100%; 
        
     }
@@ -541,11 +677,11 @@ footer{
         font-size: 14px;
     }
 
-    .servicos-box a {
+    .servicosbox a {
         width: 60%;
     }
 
-    .servicos-container{
+    .servconta{
         flex-direction: column;
         align-items: center;
         width: 95%;
@@ -628,7 +764,7 @@ footer{
         
     }
 
-    .servicos-container{
+    .servconta{
         flex-direction: column;
         align-items: center;
         width: 95%;
@@ -639,16 +775,16 @@ footer{
         margin-top: -13rem;
     }
 
-    .servicos-box a{
+    .servicosbox a{
         width: 60%;
         font-size: 14px;
     }
 
-    .servicos-box h3{
+    .servicosbox h3{
         font-size: 20px;
     }
 
-    .servicos-box p{
+    .servicosbox p{
         font-size: 15px;
     }
 

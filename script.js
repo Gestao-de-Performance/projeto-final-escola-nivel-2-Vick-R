@@ -23,3 +23,24 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.click(); 
     document.body.removeChild(link); 
 });
+
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
+let header = document.querySelector('header')
+let home = document.querySelector("#home")
+let servicosbox = document.querySelectorAll(".servicosbox")
+
+trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jojo
+    trilho.classList.toggle('light');
+    body.classList.toggle('light');
+    header.classList.toggle('light');
+    home?.classList.toggle('light');
+    servicosbox.forEach(card => {
+        card.classList.toggle('light');
+    });
+    servconta.forEach(conta => {
+        conta.classList.toggle('light');
+    });
+
+    
+});
