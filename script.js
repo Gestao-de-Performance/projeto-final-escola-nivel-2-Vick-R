@@ -38,9 +38,5 @@ trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jo
     servicosbox.forEach(card => {
         card.classList.toggle('light');
     });
-    servconta.forEach(conta => {
-        conta.classList.toggle('light');
-    });
-
     
 });

@@ -9,15 +9,10 @@
     --color-00: #323946;
     --bg-light: #c0b4b4;
     --header-light:#8d6e6e;
-
-
-
-
-    /* cor de teste */
-
-    --color-01: #14032c;
     --color-02: #eb4141;
-    --color-03: #3fbfff;
+    --port-h2: #eeb5bf;
+
+
 }
 
 *{
@@ -216,11 +211,6 @@ span{
     font-size: 2.7rem; /* teste */
 }
 
-/*body.light h1, body.light h3,
-.home.light h1, .home.light h3 {
-    color: var(--bg-color02);
-}*/
-
 
 body.light .home h1, body.light .home h3 {
     color: var(--bg-color02);
@@ -341,6 +331,10 @@ body.light .btn{
 .portifolio {
     background-color: var(--bg-color02);
     
+}
+
+body.light .portifolio span {
+    color: var(--port-h2);
 }
 
 body.light .portifolio {
