@@ -504,6 +504,109 @@ body.light footer{
 
 }
 
+.slider {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    overflow: hidden;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servconta.slider{
+    margin: 0;
+}
+
+.item{
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    position: absolute;
+    width: 27vh;
+    height: 40%;
+    text-align: center;
+    color: var(--color-02);
+    background-color: var(--text-color);
+    border-radius: 8px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 10%;
+    overflow: hidden;
+    
+}
+
+.item h1{
+    padding: 10% 8% 6% 8%;
+    text-align: start;
+
+}
+
+.item p{
+    padding: 0% 8% 10% 8%;
+    text-align: left;
+    width: 100%;
+    display: block;
+    
+    
+}
+
+#next, #prev{
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+
+}
+
+#next{
+    left: unset;
+    right: 50px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    z-index: 10;
+}
+
+button#prev {
+    left: 10px;
+}
+
+button#next {
+    right: 5px;
+}
+
+button#next:hover,
+button#prev:hover {
+    background-color: var(--main-color);
+    color: #fff; 
+    transition: background-color 0.3s ease;
+}
+
+
+
 /* ==== menu hamburguer ==== */
 .menu-hamburguer{
     display: none;
