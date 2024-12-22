@@ -549,7 +549,7 @@ body.light footer{
 
 .item p{
     padding: 0% 8% 10% 8%;
-    font-size: 14px;
+    font-size: 0.9rem;
     line-height: 1.5;
     text-align: left;
     width: 100%;
@@ -724,6 +724,7 @@ button#prev:hover {
     }
     
     
+    
 
 }
 
@@ -737,12 +738,66 @@ button#prev:hover {
         width: 40%;
    }
 
+   .item p{
+    padding: 0% 8% 0% 8%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+   }
+        
+    .btn-service{
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.8rem 1.7rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .item h1{
+        padding: 10% 8% 6% 8%;
+        text-align: start;
+        font-size: 2.5rem;
+    
+    }
+
+    .item i{
+        font-size: 3rem;
+    
+    }
+
 }
 
 @media screen and (max-width: 1024px){
 
     .portifolio-container{
         flex-direction: column;
+    }
+
+    .item p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+       }
+            
+    .btn-service{
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1.7rem;
+        font-size: 1.2rem;
+    }
+    
+    .item h1{
+         padding: 10% 8% 6% 8%;
+         text-align: start;
+        font-size: 2rem;
+        
+    }
+    
+    .item i{
+        font-size: 2.5rem;
+        
     }
 }
 
@@ -787,6 +842,28 @@ button#prev:hover {
 
     .portifolio-box{
         margin-top: 0;
+    }
+
+    .item p{
+        font-size: 0.9rem;
+       }
+            
+    .btn-service{
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1.7rem;
+        font-size: 1rem;
+    }
+    
+    .item h1{
+         padding: auto;
+        font-size: 1.5rem;
+        
+    }
+    
+    .item i{
+        font-size: 2rem;
+        
     }
 
 }
@@ -869,6 +946,13 @@ button#prev:hover {
 
     footer{
         font-size: 14px;
+    }
+
+    .btn-service{
+        display: inline-block;
+        margin-top: 0.8rem;
+        padding: 0.5rem 1.7rem;
+        font-size: 0.8rem;
     }
 
 }
