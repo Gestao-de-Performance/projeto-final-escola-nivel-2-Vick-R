@@ -29,6 +29,10 @@ let body = document.querySelector('body')
 let header = document.querySelector('header')
 let home = document.querySelector("#home")
 let servicosbox = document.querySelectorAll(".servicosbox")
+let items = document.querySelectorAll('.slider .item');
+let next = document.querySelector('#next');
+let prev = document.querySelector('#prev');
+
 
 trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jojo
     trilho.classList.toggle('light');
@@ -38,12 +42,9 @@ trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jo
     servicosbox.forEach(card => {
         card.classList.toggle('light');
     });
-    
+    next.classList.toggle('light');
+    prev.classList.toggle('light');
 });
-
-let items = document.querySelectorAll('.slider .item');
-let next = document.querySelector('#next');
-let prev = document.querySelector('#prev');
 
 let active = 3;
 function loadShow(){
