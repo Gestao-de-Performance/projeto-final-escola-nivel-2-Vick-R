@@ -24,6 +24,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     document.body.removeChild(link); 
 });
 
+//selecao de elementos para o modo light + botao direita e esquerda dos cards
 let trilho = document.getElementById('trilho')
 let body = document.querySelector('body')
 let header = document.querySelector('header')
@@ -32,8 +33,10 @@ let servicosbox = document.querySelectorAll(".servicosbox")
 let items = document.querySelectorAll('.slider .item');
 let next = document.querySelector('#next');
 let prev = document.querySelector('#prev');
+//=================================
 
 
+//evento do trilho que ativa o modo light
 trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jojo
     trilho.classList.toggle('light');
     body.classList.toggle('light');
@@ -45,7 +48,10 @@ trilho.addEventListener('click', ()=>{ //aerofunction parece nome de stand de jo
     next.classList.toggle('light');
     prev.classList.toggle('light');
 });
+//=================================
 
+
+//os cards da parte de servicos
 let active = 3;
 function loadShow(){
     let stt = 0;
@@ -70,7 +76,9 @@ function loadShow(){
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
 }
+//=================================
 
+//botao direita e esquerda
 loadShow();
 next.onclick = function(){
     active = active + 1 < items.length ? active + 1 : active;
@@ -81,3 +89,4 @@ prev.onclick = function(){
     active = active - 1 >=  0 ? active - 1 : active;
     loadShow();
 }
+//=================================
