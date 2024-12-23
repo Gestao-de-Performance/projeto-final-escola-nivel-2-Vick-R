@@ -214,7 +214,8 @@ img {
 .home-content h1, .sobre-conteudo h1{
     font-weight: 700;
     line-height: 1.3;
-    font-size: 2.7rem; 
+    font-size: 2.7rem; /* teste */
+}
 
 
 body.light .home h1, body.light .home h3 {
@@ -238,7 +239,7 @@ body.light .home p {
     text-align: center;
 }
 
-/*====== todas as partes que estao comentadas faziam parte dos antigos cards=====*/
+/*====== todas as partes que estao comentadas faziam parte dos antigos cards==========*/
 /*.servconta{
     display: flex;
     flex-direction: row;
